@@ -67,7 +67,7 @@ function App() {
         {isRunning ? "Cancel Timer" : "Start Timer"}
         </button>
       </div>
-      {over?(<p className="end">The Countdown is over! What's next on your adventure?</p>):error ? (
+      {over?(<p className="end">  &#127881; The Countdown is over! What's next on your adventure?  &#127881;</p>):error ? (
         <h3>Selected time is more than 100 days</h3>
       ):(
       <div className="display">
