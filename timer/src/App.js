@@ -57,7 +57,7 @@ function App() {
   return (
     <div className="App">
       <div className="header"> 
-      <h1><span>Countdown</span> <span>Timer</span></h1>
+      <h1><span className='head1'>Countdown</span> <span className='head2'>Timer</span></h1>
       </div>
       <div className="fill">
         <input type="datetime-local" id="meeting" onChange={(e)=>setSelectedDate(Date.parse(e.target.value))}/>
@@ -73,19 +73,19 @@ function App() {
       <div className="display">
         <div className="display-box">
           <p>{days}</p>
-          <p>Days</p>
+          <p className='filt'>Days</p>
         </div>
         <div className="display-box">
           <p>{hours}</p>
-          <p>Hours</p>
+          <p className='filt'>Hours</p>
         </div>
         <div className="display-box">
           <p>{mins}</p>
-          <p>Minutes</p>
+          <p className='filt'>Minutes</p>
         </div>
         <div className="display-box">
           <p>{sec}</p>
-          <p>Seconds</p>
+          <p className='filt'>Seconds</p>
         </div>
       </div>
       )}
